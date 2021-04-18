@@ -1,0 +1,68 @@
+.loadingblock{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.clickblock{
+    background-color:rgba(0, 0, 0, 0.8);
+}
+.loadingcontainer{
+    width: 20rem;
+    height: 3rem;
+    border-bottom:5px solid #2b2b2b;
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+}
+.clickcontainer{
+    border-bottom:5px solid white;
+}
+.loadingfont{
+    color: #2b2b2b;
+    font-size: 2rem;
+    transform-style: preserve-3d;
+    animation: turn 3s infinite;
+    padding: 0 0.5rem;
+}
+.clickfont{
+    color: white;
+}
+.loadingfont:nth-child(1){
+    animation-delay: 300ms;
+}
+.loadingfont:nth-child(2){
+    animation-delay: 500ms;
+}
+.loadingfont:nth-child(3){
+    animation-delay: 700ms;
+}
+.loadingfont:nth-child(4){
+    animation-delay: 900ms;
+}
+.loadingfont:nth-child(5){
+    animation-delay: 1100ms;
+}
+.loadingfont:nth-child(6){
+    animation-delay: 1300ms;
+}
+.loadingfont:nth-child(7){
+    animation-delay: 1500ms;
+}
+
+@keyframes turn{
+    0% {
+        transform:rotateX(0deg);
+        transform-origin: 0 2.9rem;
+    }
+    100% {
+        transform:rotateX(360deg);
+        transform-origin: 0 2.9rem;
+    }
+}
